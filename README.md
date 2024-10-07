@@ -1,5 +1,9 @@
-### Hi there 👋
+## Hi there, I'm Urvi Latnekar 👋
+## My Titles
 
+- **Data Scientist**
+- **ML Engineer**
+- **M.S. in Data Science**
 <!--
 **urvilatnekar/urvilatnekar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
