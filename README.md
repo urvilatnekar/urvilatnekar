@@ -1,10 +1,11 @@
 <div align="center">
 ## Hi there, I'm Urvi Latnekar 👋
+</div>
 
-
-
+<div align="center">
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?color=F7F7F7&size=30&lines=Data+Scientist;ML+Engineer;Data+Engineer;Software+Engineer;M.S.+in+Analytics;M.Tech+in+Data+Science+Engineering;)
 </div>
+---
 <!--
 **urvilatnekar/urvilatnekar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
