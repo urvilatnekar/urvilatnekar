@@ -1,9 +1,59 @@
 ## Hi there, I'm Urvi Latnekar 👋
-## My Titles
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Titles</title>
+    <style>
+        .title-container {
+            font-size: 1.5em;
+            font-weight: bold;
+            height: 1.2em; /* Adjust height as needed */
+            overflow: hidden; /* Hide overflow */
+            position: relative;
+        }
 
-- **Data Scientist**
-- **ML Engineer**
-- **M.S. in Data Science**
+        .title {
+            position: absolute;
+            animation: fade 1s forwards;
+            opacity: 0;
+        }
+
+        @keyframes fade {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <div class="title" id="title1">Data Scientist</div>
+        <div class="title" id="title2">ML Engineer</div>
+        <div class="title" id="title3">M.S. in Data Science</div>
+    </div>
+
+    <script>
+        const titles = ["Data Scientist", "ML Engineer", "M.S. in Data Science"];
+        let index = 0;
+
+        function showNextTitle() {
+            const currentTitle = document.getElementById(`title${index + 1}`);
+            currentTitle.style.opacity = '1'; // Show the current title
+            setTimeout(() => {
+                currentTitle.style.opacity = '0'; // Hide the current title
+                index = (index + 1) % titles.length; // Move to the next title
+                const nextTitle = document.getElementById(`title${index + 1}`);
+                nextTitle.style.opacity = '1'; // Show the next title
+            }, 2000); // Change time as needed
+        }
+
+        setInterval(showNextTitle, 4000); // Adjust interval time as needed
+        showNextTitle(); // Start the cycle
+    </script>
+</body>
+</html>
+
 <!--
 **urvilatnekar/urvilatnekar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
